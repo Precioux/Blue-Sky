@@ -2,6 +2,4 @@ Blue Sky is a weather and pollution service app that shows some cities of Iran's
 
 #### Amirkabir University of Technology - Fall 2023
 
-<img src="MainPage.png">
-<img src="mylocation.png">
-<img src="provinces.png">
+![Main Page](MainPage.png) ![My Location](mylocation.png) ![Provinces](provinces.png)
