@@ -22,9 +22,9 @@ fun ChooseProvinceInputs(
             modifier = Modifier
                 .padding(top = AppTheme.dimens.paddingExtraLarge)
                 .align(CenterHorizontally),
-            text = stringResource(id = R.string.choose_qazvin_button_text),
+            text = stringResource(id = R.string.choose_gilan_button_text),
             onClick = {
-                SharedData.SHARE.province = Province.QAZVIN
+                SharedData.SHARE.province = Province.GILAN
                 onSubmit.invoke()
             }
         )
@@ -42,9 +42,9 @@ fun ChooseProvinceInputs(
             modifier = Modifier
                 .padding(top = AppTheme.dimens.paddingExtraLarge)
                 .align(CenterHorizontally),
-            text = stringResource(id = R.string.choose_qom_button_text),
+            text = stringResource(id = R.string.choose_mazandaran_button_text),
             onClick = {
-                SharedData.SHARE.province = Province.QOM
+                SharedData.SHARE.province = Province.MAZANDARAN
                 onSubmit.invoke()
             }
         )
@@ -81,15 +81,15 @@ fun ChooseCityInputs(
                 .padding(top = AppTheme.dimens.paddingExtraLarge)
                 .align(CenterHorizontally),
             text = when (SharedData.SHARE.province) {
-                Province.QAZVIN -> stringResource(id = R.string.choose_qazvin_city_button_text)
+                Province.GILAN -> stringResource(id = R.string.choose_rasht_city_button_text)
                 Province.TEHRAN -> stringResource(id = R.string.choose_tehran_city_button_text)
                 Province.ALBORZ -> stringResource(id = R.string.choose_karaj_city_button_text)
-                Province.QOM -> stringResource(id = R.string.choose_qom_city_button_text)
+                Province.MAZANDARAN -> stringResource(id = R.string.choose_sari_city_button_text)
                 Province.MARKAZI -> stringResource(id = R.string.choose_arak_city_button_text)
             },
             onClick = {
                 when (SharedData.SHARE.province) {
-                    Province.QAZVIN -> {
+                    Province.GILAN -> {
                         SharedData.SHARE.lon = "50.007392"
                         SharedData.SHARE.lat = "36.284530"
                     }
@@ -104,7 +104,7 @@ fun ChooseCityInputs(
                         SharedData.SHARE.lat = "35.817931"
                     }
 
-                    Province.QOM -> {
+                    Province.MAZANDARAN -> {
                         SharedData.SHARE.lon = "50.886193"
                         SharedData.SHARE.lat = "34.646120"
                     }
@@ -122,17 +122,17 @@ fun ChooseCityInputs(
                 .padding(top = AppTheme.dimens.paddingExtraLarge)
                 .align(CenterHorizontally),
             text = when (SharedData.SHARE.province) {
-                Province.QAZVIN -> stringResource(id = R.string.choose_alvand_city_button_text)
+                Province.GILAN -> stringResource(id = R.string.choose_lahijan_city_button_text)
                 Province.TEHRAN -> stringResource(id = R.string.choose_rey_city_button_text)
                 Province.ALBORZ -> stringResource(id = R.string.choose_malard_city_button_text)
-                Province.QOM -> stringResource(id = R.string.choose_kohak_city_button_text)
+                Province.MAZANDARAN -> stringResource(id = R.string.choose_noor_city_button_text)
                 Province.MARKAZI -> stringResource(id = R.string.choose_save_city_button_text)
             },
             onClick = {
                 when (SharedData.SHARE.province) {
-                    Province.QAZVIN -> {
-                        SharedData.SHARE.lon = "50.069579"
-                        SharedData.SHARE.lat = "36.189306"
+                    Province.GILAN -> {
+                        SharedData.SHARE.lon = "37.2713"
+                        SharedData.SHARE.lat = "49.5921"
                     }
 
                     Province.TEHRAN -> {
@@ -145,9 +145,9 @@ fun ChooseCityInputs(
                         SharedData.SHARE.lat = "35.665540"
                     }
 
-                    Province.QOM -> {
-                        SharedData.SHARE.lon = "50.865053"
-                        SharedData.SHARE.lat = "34.395700"
+                    Province.MAZANDARAN -> {
+                        SharedData.SHARE.lon = "36.3994"
+                        SharedData.SHARE.lat = "52.1912"
                     }
 
                     Province.MARKAZI -> {
@@ -163,33 +163,37 @@ fun ChooseCityInputs(
                 .padding(top = AppTheme.dimens.paddingExtraLarge)
                 .align(CenterHorizontally),
             text = when (SharedData.SHARE.province) {
-                Province.QAZVIN -> stringResource(id = R.string.choose_takestan_city_button_text)
+                Province.GILAN -> stringResource(id = R.string.choose_astara_city_button_text)
                 Province.TEHRAN -> stringResource(id = R.string.choose_qods_city_button_text)
                 Province.ALBORZ -> stringResource(id = R.string.choose_hashtgerd_city_button_text)
-                Province.QOM -> stringResource(id = R.string.choose_jafar_city_button_text)
+                Province.MAZANDARAN -> stringResource(id = R.string.choose_amol_button_text)
                 Province.MARKAZI -> stringResource(id = R.string.choose_tafresh_city_button_text)
             },
             onClick = {
                 when (SharedData.SHARE.province) {
-                    Province.QAZVIN -> {
-                        SharedData.SHARE.lon = "49.695847"
-                        SharedData.SHARE.lat = "36.070638"
+                    Province.GILAN -> {
+                        SharedData.SHARE.lon = "37.2713"
+                        SharedData.SHARE.lat = "49.5921"
                     }
+
                     Province.TEHRAN -> {
-                        SharedData.SHARE.lon = "51.111508"
-                        SharedData.SHARE.lat = "35.717866"
+                        SharedData.SHARE.lon = "51.437432"
+                        SharedData.SHARE.lat = "35.598883"
                     }
+
                     Province.ALBORZ -> {
-                        SharedData.SHARE.lon = "50.685104"
-                        SharedData.SHARE.lat = "35.962252"
+                        SharedData.SHARE.lon = "50.979598"
+                        SharedData.SHARE.lat = "35.665540"
                     }
-                    Province.QOM -> {
-                        SharedData.SHARE.lon = "51.220913"
-                        SharedData.SHARE.lat = "35.342413"
+
+                    Province.MAZANDARAN -> {
+                        SharedData.SHARE.lon = " 36.4696"
+                        SharedData.SHARE.lat = "52.3507"
                     }
+
                     Province.MARKAZI -> {
-                        SharedData.SHARE.lon = "50.341066"
-                        SharedData.SHARE.lat = "35.043964"
+                        SharedData.SHARE.lon = "49.430756"
+                        SharedData.SHARE.lat = "34.043228"
                     }
                 }
                 onSubmit.invoke()

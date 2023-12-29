@@ -11,29 +11,29 @@
 
     <!--ChooseProvince-->
     <string name="choose_province_heading_text">Choose Province</string>
-    <string name="choose_qazvin_button_text">Qazvin Province</string>
+    <string name="choose_gilan_button_text">Gilan Province</string>
     <string name="choose_tehran_button_text">Tehran Province</string>
     <string name="choose_alborz_button_text">Alborz Province</string>
     <string name="choose_markazi_button_text">Markazi Province</string>
-    <string name="choose_qom_button_text">Qom Province</string>
+    <string name="choose_mazandaran_button_text">Mazandaran Province</string>
     <string name="back_to_welcome">Home</string>
 
     <!--ChooseCity-->
     <string name="choose_city_heading_text">Choose City</string>
-    <string name="choose_qazvin_city_button_text">Qazvin City</string>
-    <string name="choose_alvand_city_button_text">Alvand City</string>
-    <string name="choose_takestan_city_button_text">Takestan City</string>
+    <string name="choose_rasht_city_button_text">Rasht City</string>
+    <string name="choose_lahijan_city_button_text">Lahijan City</string>
+    <string name="choose_astara_city_button_text">Astara City</string>
 
     <string name="choose_tehran_city_button_text">Tehran City</string>
     <string name="choose_rey_city_button_text">Rey City</string>
     <string name="choose_qods_city_button_text">Qods City</string>
 
-    <string name="choose_qom_city_button_text">Qom City</string>
-    <string name="choose_kohak_city_button_text">Kohak City</string>
-    <string name="choose_jafar_city_button_text">Jafar Abad City</string>
+    <string name="choose_sari_city_button_text">Sari City</string>
+    <string name="choose_noor_city_button_text">Noor City</string>
+    <string name="choose_amol_button_text">Amol City</string>
 
     <string name="choose_arak_city_button_text">Arak City</string>
-    <string name="choose_save_city_button_text">Save City</string>
+    <string name="choose_save_city_button_text">Saveh City</string>
     <string name="choose_tafresh_city_button_text">Tafresh City</string>
 
     <string name="choose_karaj_city_button_text">Karaj City</string>
