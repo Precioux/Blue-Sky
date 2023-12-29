@@ -19,6 +19,7 @@ fun NavGraphBuilder.unauthenticatedGraph(navController: NavController) {
         startDestination = NavigationRoutes.Routes.Welcome.route
     ) {
         // Welcome
+
         composable(route = NavigationRoutes.Routes.Welcome.route) {
             WelcomeScreen(
                 onNavigateToCurrent = {
