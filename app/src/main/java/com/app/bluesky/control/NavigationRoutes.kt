@@ -1,5 +1,4 @@
 package com.app.bluesky.control
-
 sealed class NavigationRoutes {
     sealed class Routes(val route: String) : NavigationRoutes() {
         object NavigationRoute : Routes(route = "unauthenticated")

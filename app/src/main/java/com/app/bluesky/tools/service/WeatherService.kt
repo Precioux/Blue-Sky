@@ -1,9 +1,9 @@
 package com.app.bluesky.tools.service
 
-import com.app.bluesky.tools.API.dto.pollution.PollutionResponse
-import com.app.bluesky.tools.API.dto.weather.WeatherResponse
-import com.app.bluesky.tools.API.invoker.OpenWeatherMapService
-import com.app.bluesky.tools.API.invoker.getClient
+import com.app.bluesky.tools.api.dto.pollution.PollutionResponse
+import com.app.bluesky.tools.api.dto.weather.WeatherResponse
+import com.app.bluesky.tools.api.invoker.OpenWeatherMapService
+import com.app.bluesky.tools.api.invoker.getClient
 
 class WeatherService(val apiKey: String?) {
     private val APPID = "appid"

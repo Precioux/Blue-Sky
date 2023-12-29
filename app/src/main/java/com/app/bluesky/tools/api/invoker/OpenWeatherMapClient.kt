@@ -1,4 +1,4 @@
-package com.app.bluesky.tools.API.invoker
+package com.app.bluesky.tools.api.invoker
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

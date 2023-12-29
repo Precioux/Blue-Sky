@@ -42,7 +42,8 @@ fun WelcomeInputs(
                 .align(CenterHorizontally)
                 .fillMaxSize(),
             text = stringResource(id = R.string.choose_location_button_text),
-            onClick = onChoose
+            onClick = {
+                onChoose.invoke() }
         )
     }
 }

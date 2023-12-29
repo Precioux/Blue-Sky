@@ -30,6 +30,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.app.bluesky.R
 import java.time.LocalDateTime
+import com.app.bluesky.control.*
 
 @RequiresApi(Build.VERSION_CODES.O)
 @Composable
@@ -37,11 +38,11 @@ fun WeatherScreen(
     viewModel: WeatherScreenViewModel = WeatherScreenViewModel(),
 ) {
     val days = viewModel.response.value
-    var background = painterResource(id = R.drawable.bg_morning)
+    var background = painterResource(id = R.drawable.background)
     var degree = ""
     if (days.isNotEmpty()) {
         if (days[0].pod.equals("n")) {
-            background = painterResource(id = R.drawable.bg_night)
+            background = painterResource(id = R.drawable.background)
         }
         degree = if (days[0].temp?.length!! > 1) {
             (days[0].temp?.substring(0, 1)) + "\u2103"

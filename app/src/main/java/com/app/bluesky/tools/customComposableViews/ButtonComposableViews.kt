@@ -48,13 +48,13 @@ fun SmallClickableWithIconAndText(
         Icon(
             imageVector = iconVector,
             contentDescription = iconContentDescription,
-            tint = AppTheme.colorScheme.primary
+            tint = AppTheme.colorScheme.onBackground
         )
         Text(
             modifier = Modifier.padding(start = AppTheme.dimens.paddingSmall),
             text = text,
             style = AppTheme.typography.titleSmall,
-            color = AppTheme.colorScheme.primary
+            color = AppTheme.colorScheme.onBackground
         )
     }
 }

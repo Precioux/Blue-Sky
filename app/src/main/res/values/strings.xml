@@ -6,8 +6,8 @@
     <string name="navigate_back">Navigate to the previous screen</string>
 
     <!--Welcome-->
-    <string name="current_location_button_text">Current Location</string>
-    <string name="choose_location_button_text">Choose Your Location</string>
+    <string name="current_location_button_text">My City</string>
+    <string name="choose_location_button_text">Choose City</string>
 
     <!--ChooseProvince-->
     <string name="choose_province_heading_text">Choose Province</string>
@@ -16,7 +16,7 @@
     <string name="choose_alborz_button_text">Alborz Province</string>
     <string name="choose_markazi_button_text">Markazi Province</string>
     <string name="choose_qom_button_text">Qom Province</string>
-    <string name="back_to_welcome">Back to Welcome</string>
+    <string name="back_to_welcome">Home</string>
 
     <!--ChooseCity-->
     <string name="choose_city_heading_text">Choose City</string>

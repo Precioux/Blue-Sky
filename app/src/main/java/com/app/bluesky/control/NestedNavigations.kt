@@ -1,5 +1,6 @@
 package com.app.bluesky.control
 
+
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.navigation.NavController
@@ -19,7 +20,6 @@ fun NavGraphBuilder.unauthenticatedGraph(navController: NavController) {
         startDestination = NavigationRoutes.Routes.Welcome.route
     ) {
         // Welcome
-
         composable(route = NavigationRoutes.Routes.Welcome.route) {
             WelcomeScreen(
                 onNavigateToCurrent = {

@@ -1,8 +1,8 @@
-package com.app.bluesky.tools.API.invoker
+package com.app.bluesky.tools.api.invoker
 
-import com.app.bluesky.tools.API.dto.*
-import com.app.bluesky.tools.API.dto.pollution.PollutionResponse
-import com.app.bluesky.tools.API.dto.weather.WeatherResponse
+import com.app.bluesky.tools.api.dto.*
+import com.app.bluesky.tools.api.dto.pollution.PollutionResponse
+import com.app.bluesky.tools.api.dto.weather.WeatherResponse
 import retrofit2.http.GET
 import retrofit2.http.QueryMap
 

@@ -1,4 +1,4 @@
-package com.app.bluesky.tools.API.dto.weather;
+package com.app.bluesky.tools.api.dto.weather;
 import com.google.gson.annotations.SerializedName
 
 

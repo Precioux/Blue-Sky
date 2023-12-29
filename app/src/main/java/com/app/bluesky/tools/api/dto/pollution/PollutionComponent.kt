@@ -1,4 +1,4 @@
-package com.app.bluesky.tools.API.dto.pollution
+package com.app.bluesky.tools.api.dto.pollution
 
 import com.google.gson.annotations.SerializedName
 

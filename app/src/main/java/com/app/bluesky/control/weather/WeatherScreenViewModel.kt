@@ -4,11 +4,11 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import kotlinx.coroutines.launch
-import com.app.bluesky.tools.API.dto.pollution.PollutionResponse
-import com.app.bluesky.tools.API.dto.weather.WeatherResponse
-import com.app.bluesky.tools.service.WeatherService
 import com.app.bluesky.model.DayWeather
+import kotlinx.coroutines.launch
+import com.app.bluesky.tools.api.dto.pollution.PollutionResponse
+import com.app.bluesky.tools.service.WeatherService
+import com.app.bluesky.tools.api.dto.weather.WeatherResponse
 import com.app.bluesky.model.SharedData
 
 class WeatherScreenViewModel : ViewModel() {
@@ -92,4 +92,6 @@ class WeatherScreenViewModel : ViewModel() {
         )
     }
 }
+
+
 

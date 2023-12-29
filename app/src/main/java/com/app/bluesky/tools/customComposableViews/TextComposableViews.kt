@@ -15,14 +15,14 @@ import com.app.bluesky.ui.theme.*
 fun TitleText(
     modifier: Modifier = Modifier,
     text: String,
-    textAlign: TextAlign = TextAlign.Start
+    textAlign: TextAlign = TextAlign.Center
 ) {
     Text(
         modifier = modifier,
         text = text,
         textAlign = textAlign,
-        style = AppTheme.typography.headlineLarge,
-        color = AppTheme.colorScheme.primary
+        style = TextStyle(fontSize = 35.sp, fontWeight = FontWeight.ExtraBold),
+        color = AppTheme.colorScheme.onPrimary
     )
 }
 
