@@ -31,6 +31,7 @@ import androidx.compose.ui.unit.sp
 import com.app.bluesky.R
 import java.time.LocalDateTime
 import com.app.bluesky.control.*
+import com.app.bluesky.ui.theme.AppTheme
 
 @RequiresApi(Build.VERSION_CODES.O)
 @Composable
@@ -71,28 +72,27 @@ fun WeatherScreen(
                             text = it,
                             fontSize = 50.sp,
                             fontWeight = FontWeight.Normal,
-                            color = Color.White,
+                            color = AppTheme.colorScheme.onPrimary,
                         )
                     }
                     Text(
                         text = degree,
                         fontSize = 100.sp,
                         fontWeight = FontWeight.Normal,
-                        color = Color.White
+                        color = AppTheme.colorScheme.onPrimary
                     )
                     Spacer(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .size(300.dp)
+                            .size(130.dp)
                     )
 
                     Card(
                         colors = CardDefaults.cardColors(
-                            containerColor = Color.Transparent,
+                            containerColor = AppTheme.colorScheme.onPrimary,
                         ),
                         modifier = Modifier
                             .fillMaxWidth()
-                            .shadow(3.dp)
                     ) {
                         Row(
                             horizontalArrangement = Arrangement.Center,
@@ -112,7 +112,9 @@ fun WeatherScreen(
                                     Text(
                                         text = dayOfWeek.name,
                                         textAlign = TextAlign.Center,
-                                        color = Color.White
+                                        color = Color.White,
+                                        fontSize = 14.sp
+
                                     )
                                     val degree2 = if (day.temp?.length!! > 1) {
                                         (day.temp.substring(0, 1)) + "\u2103"
@@ -131,45 +133,52 @@ fun WeatherScreen(
                             }
                         }
                     }
-
+                    Spacer(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .size(60.dp)
+                    )
                     var containerColor = Color.Transparent
                     var pollutionText = "Good"
                     when (days[0].pollution) {
-                        1 -> containerColor = Color.Green
+                        1 -> containerColor = Color.Black
 
                         2 -> {
-                            containerColor = Color.Yellow
                             pollutionText = "Fair"
                         }
 
                         3 -> {
-                            containerColor = Color.Magenta
                             pollutionText = "Moderate"
                         }
 
                         4 -> {
-                            containerColor = Color.Red
                             pollutionText = "Poor"
                         }
 
                         5 -> {
-                            containerColor = Color.Black
                             pollutionText = "Very Poor"
                         }
                     }
-                    Card(
-                        colors = CardDefaults.cardColors(
-                            containerColor = Color.Transparent,
-                        ),
+                    Box(
                         modifier = Modifier
-                            .fillMaxWidth()
-                            .shadow(3.dp)
+                            .fillMaxWidth(),
+                        contentAlignment = Alignment.Center
                     ) {
-                        Text(
-                            text = "Pollution: $pollutionText",
-                            color = containerColor
-                        )
+                        Card(
+                            colors = CardDefaults.cardColors(
+                                containerColor = Color.Transparent,
+                            ),
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            Text(
+                                text = "  Pollution: $pollutionText",
+                                fontWeight = FontWeight.ExtraBold,
+                                color = AppTheme.colorScheme.onPrimary,
+                                fontSize = 20.sp
+                            )
+                        }
                     }
+
                 }
             } else {
                 Text(
